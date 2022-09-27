@@ -17,6 +17,7 @@ h1{
     margin-left: 1.5%;
     text-align: justify;
     width: 50%;
+    height: auto;
 }
 .preparacion li{
     padding: 5px;
@@ -33,4 +34,13 @@ margin-top: 10px;
 
 .frameUbicacion{
     margin-left: 2%;
+}
+
+.listaPrincipal h2{
+    color: red;
+    text-decoration:underline;
+}
+
+body{
+    background-color: bisque;
 }
