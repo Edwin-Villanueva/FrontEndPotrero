@@ -2,27 +2,49 @@
 body{
     display: flex;
     flex-wrap: wrap;
+
     background-color: bisque;
 }
 h1{
     color: black;
 }
 header{
+    align-items: center;
     display: flex;
     justify-content:start;
-    width: 100%;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
     
 }
+.BHeader{
+    display: flex;
+    flex: 350px;
+    justify-content: center;
+    text-align: center;
+}
+.BHeader button{
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+    animation: none;
+}
+.BHeader img{
+    width: 50px;
+}
 .logo{
-    width: 25.8%;
+    text-align: center;
+    width: 500px;
+    flex: 350px;
 }
 .logo img{
     padding-left:30px;
-    width: 30%;
+    width: 100px;
 }
 .titulo{
     text-align: center;
-    width: 47.4%;
+    flex: 350px;
 }
 nav{
     padding: 3px;
@@ -53,15 +75,36 @@ aside{
     border-style: dotted;
 }
 footer{
+    align-items: center;
     margin-top: 10px;
-    width: 100%;
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-evenly;
 }
 footer img{
     border-radius: 50%;
     width: 50px;
 
+}
+.Fframe{
+    width: 260px;
+}
+.containerIframe{
+    display: flex;
+    flex: 500px;
+}
+.botonesFo{
+    justify-content: center;
+    flex: 600px;
+    display: flex;
+    
+}
+.datosP{
+    width: 500px;
+    display: flex;
+    justify-content: center;
 }
 footer button{
     cursor: pointer;
