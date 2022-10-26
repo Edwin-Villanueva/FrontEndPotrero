@@ -1,179 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@font-face {
+    font-family: "Shalimar";
+    src: url("./fonts/Shalimar-Regular.ttf")
+    format("truetype");
+}
 
-body{
+/* ---------------------HEADER---------------------- */
+body {
     display: flex;
     flex-wrap: wrap;
+}
 
-    background-color: bisque;
-}
-h1{
-    color: black;
-}
 header{
     align-items: center;
+    justify-content: space-around;
     display: flex;
-    justify-content:start;
-    width: 100vw;
+    width: 100%;
     flex-wrap: wrap;
-    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0.1em solid green;
+    font-size: 1em;
+
+}
+.titulo{
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    font-size:clamp(1em,3vw,5em);
+    word-wrap: break-word;
+    font-family: 'Inspiration', cursive;
     
 }
-.BHeader{
-    display: flex;
-    flex: 350px;
-    justify-content: center;
-    text-align: center;
+.titulo p{
+    
+    font-size: calc(1vw + 0.7em);
 }
-.BHeader button{
+
+.logo{
+    display: flex;
+}
+.logo img{
+    width:100%;
+    height: 10vh;
+}
+.botonesFo{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.botonesFo img{
+    border-radius: 50%;
+    width: 100%;
+    height: 8vh;
+    object-fit: contain;
+}
+.botonesFo button{
+    cursor: pointer;
+    border-color: transparent;
+    background-color:transparent;
+    animation: none;
+}
+/* ---------------------NAV---------------------- */
+nav{
+    padding: 1em;
+    align-items: flex-start;
+    min-height: 0em;
+    width: 20%;
+    box-sizing: border-box;
+    border: 0.1em solid violet;
+}
+.listaDeLinks{
+    justify-content: space-evenly;
+    width: 100%;
+    font-size:clamp(.5em,1.5vw,5em);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0.1em;
+    word-wrap: break-word;
+    font-family:"Shalimar";
+    font-weight:bold;
+    
+}
+.listaDeLinks a{
+    text-decoration: none;
+}
+.listaDeLinks a{
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+}
+.parrafo1{
+    
+    width: 100%;
+    word-wrap: break-word;
+    font-size:clamp(.6em,1.5vw,5em);
+    
+}
+section{
+    display: flex;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 80%;
+    border: 0.1em solid orange;
+}
+section img{
+    width: 100%;
+}
+.principal{
+    box-sizing: border-box;
+    padding: 1em;
+    word-wrap: break-word;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    font-size:clamp(1.2em,1vw,5em);
+}
+.pasos ol li{
+    padding: .5em;
+}
+aside{
+    height: auto;
+    width: 25%;
+    box-sizing: border-box;
+    margin: .5em;
+    padding: .5em;
+    border: 0.1em solid blue;
+    font-size:clamp(0.8em,1vw,5em);
+    word-wrap: break-word;
+
+}
+
+.videoPreparacion{
+    display: flex;
+}
+.videoPreparacion iframe{
+    width: 100%;
+}
+
+.ubicacion{
+    display: flex;
+}
+.ubicacion iframe{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.1em solid salmon;
+    box-sizing: border-box;
+}
+.containerIframe{
+    box-sizing: border-box;
+    margin: 1em;
+    display: flex;
+    
+}
+.containerIframe iframe{
+    width: 100%;
+    height: 40vh;
+}
+.datosP{
+    padding: 1em;
+    box-sizing: border-box;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 0.1em solid grey;
+
+}
+.datosP p{
+    height: .1em;
+}
+
+.btnWhatsapp{
+    width: 20%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    position:fixed;
+    right: 1em;
+    bottom: 0;
+
+}
+.btnWhatsapp img{
+    width: 70%;
+    border-radius: 50%;
+}
+.btnWhatsapp button{
+    min-width: 6em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
     background-color: transparent;
     animation: none;
-}
-.BHeader img{
-    width: 50px;
-}
-.logo{
-    text-align: center;
-    width: 500px;
-    flex: 350px;
-}
-.logo img{
-    padding-left:30px;
-    width: 100px;
-}
-.titulo{
-    text-align: center;
-    flex: 350px;
-}
-nav{
-    padding: 3px;
-    border : 1px solid white;
-    width: 20%;
-    margin-right: 2px;
-    border-style:double
-}
-section{
-    display: flex;
-    flex-direction: row;
-    padding: 3px;
-    border: 1px solid red ;
-    border-style: dotted;
-    width: 70%;
-}
-aside{
-
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    padding-left: 10px ;
-    width: 34%;
-    height: 15%;
-}
-.divParrAside{
-    border: 1px solid grey ;
-    border-style: dotted;
-}
-footer{
-    align-items: center;
-    margin-top: 10px;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-evenly;
-}
-footer img{
-    border-radius: 50%;
-    width: 50px;
-
-}
-.Fframe{
-    width: 260px;
-}
-.containerIframe{
-    display: flex;
-    flex: 500px;
-}
-.botonesFo{
-    justify-content: center;
-    flex: 600px;
-    display: flex;
-    
-}
-.datosP{
-    width: 500px;
-    display: flex;
-    justify-content: center;
-}
-footer button{
-    cursor: pointer;
-    border-color: transparent;
-    background-color:transparent;
-    
-    animation: none;
-}
-.intro{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}
-.img1{
-    
-    text-align: center;
-    
-}
-.img1 img{
-    width: 100%;
-}
-
-.videoPreparacion{
-    display: flex;
-    justify-content: center;
-}
-
-.Ubicacion{
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.frameUbicacion{
-    margin-left: 2%;
-}
-
-.listaPrincipal {
-    width: 60%;
-}
-
-.listaPrincipal h2{
-    color: red;
-    text-decoration:underline;
-}
-.btnWhatsapp{
-    padding-left: 32%;
-    padding-top: 100px;
-    text-align: center;
-    position:fixed;
-
-}
-.btnWhatsapp img{
-    width: 50px;
-    border-radius: 50%;
-}
-.btnWhatsapp button{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border-color: transparent;
-    cursor: pointer;
-    background-color: white;
-    animation: none;
-}
-.parrafoAside {
-    
-    font-size: 13px;
-    font-family:'Trebuchet MS';
 }
