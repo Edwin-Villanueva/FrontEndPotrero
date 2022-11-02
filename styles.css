@@ -10,7 +10,27 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-
+.logoCelu{
+    width: 20vw;
+    height: 15vh;
+    object-fit: cover;
+    display: none;
+}
+.logoPC{
+    padding-left: 2em;
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+    display: none;
+}
+#desaparecer{
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+    display: block;
+}
 header{
     align-items: center;
     justify-content: space-around;
@@ -22,7 +42,11 @@ header{
     font-size: 1em;
 
 }
+header:hover{
+    background-color:green;
+}
 .titulo{
+    align-items: center;
     display: flex;
     text-align: center;
     box-sizing: border-box;
@@ -71,6 +95,7 @@ nav{
     width: 20%;
     border: double violet;
     box-sizing: border-box;
+    padding-top: 2rem;
 }
 .listaDeLinks{
     justify-content: space-evenly;
@@ -125,9 +150,10 @@ aside{
     height: fit-content;
     width: 25%;
     box-sizing: border-box;
-    font-size:clamp(0.7em,1vw,5em);
+    font-size:clamp(0.7em,1.2vw,5em);
     word-wrap: break-word;
     border: double blue;
+    padding-top: 2rem;
 }
 aside p{
     
@@ -205,4 +231,103 @@ footer{
     cursor: pointer;
     background-color: transparent;
     animation: none;
+}
+/* CELULARES VERTICAL*/
+@media (max-width:575px) {
+    #desaparecer{
+        display: none;
+    }
+    section {
+        flex-direction: column;
+        width: 100%;
+    }
+    aside {
+        padding-top: 0rem;
+        font-size:clamp(1em,1.2vw,5em);
+        width: 100%; 
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding-top: 0rem;
+        width: 100%;
+    }
+    .principal{
+        width: 100%;
+    }
+    .listaDeLinks { 
+        flex-direction: row;
+        font-size: clamp(1.5em,2vw,5em);
+    }
+    .listaDeLinks a{
+        width:auto
+    }
+    .logoCelu{
+        display:block;
+    }
+    
+}
+/* TABLETAS */
+@media (min-width: 768px) and (max-width: 991px){ 
+    nav{
+        width: 100%;
+        padding-top: 0rem;
+    }
+    .listaDeLinks { 
+        flex-direction: row;
+        font-size: clamp(1.5em,2vw,5em);
+    }
+    .listaDeLinks a{
+        width:auto
+    }
+    section {
+        width: 100%;
+    }
+    aside {
+        padding-top: 0rem;
+        margin-top: 6.2rem;
+        font-size:clamp(1em,1.2vw,5em);
+    }
+    #desaparecer{
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 15vw;
+        height: 25vh;
+        object-fit: cover;
+        display: block;
+    }
+}
+/* PANTALLAS NORMALES */
+@media (min-width: 992px) and (max-width: 1199px){ 
+    nav{
+        padding-top: 0rem;
+        width: 100%;
+    }
+    .listaDeLinks { 
+        flex-direction: row;
+        font-size: clamp(2em,2vw,5em);
+    }
+    .listaDeLinks a{
+        width:auto
+    }
+    section{
+        width: 100%;
+    }
+    .principal{
+        width: 100%;
+    }
+    aside{
+        padding-top: 0rem;
+        margin-top: 6.2rem;
+        font-size:clamp(1em,1.2vw,5em);
+
+    }
+    .logoPC {
+        display: block;
+    }
+    #desaparecer{
+        display: none;
+    }
+
 }
