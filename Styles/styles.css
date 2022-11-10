@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
 @font-face {
     font-family: "Shalimar";
-    src: url("./fonts/Shalimar-Regular.ttf")
-    format("truetype");
+    src: url("../fonts/Shalimar-Regular.ttf") format("truetype");
 }
 
 /* ---------------------HEADER---------------------- */
@@ -10,29 +10,33 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-#logoCelu{
-    width: 20vw;
+
+#logoCelu {
+    width: 20%;
+    
+    object-fit: cover;
+    display: none;
+}
+
+#logoPC {
+    padding-left: 1em;
+    width: 10vw;
     height: 15vh;
     object-fit: cover;
     display: none;
 }
-#logoPC{
-    padding-left: 2em;
-    width: 10vw;
-    height: 10vh;
-    object-fit: cover;
-    display: none;
-}
-#desaparecer{
+
+#desaparecer {
     padding-right: 2em;
-    padding-left: 2em;
+    padding-left: 1em;
     width: 20vw;
     height: 25vh;
     object-fit: cover;
     display: block;
-    
+
 }
-header{
+
+header {
     align-items: center;
     justify-content: space-around;
     display: flex;
@@ -43,52 +47,61 @@ header{
     font-size: 1em;
 
 }
-header:hover{
-    background-color:green;
+
+header:hover {
+    background-color: green;
 }
-#titulo{
+
+#titulo {
+    justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
     box-sizing: border-box;
-    font-size:clamp(2em,3vw,5em);
+    font-size: clamp(2em, 3vw, 5em);
     word-wrap: break-word;
     font-family: 'Inspiration', cursive;
-    
-}
-#titulo p{
-    
-    font-size: calc(1vw + 0.7em);
+
 }
 
-#logo{
+#titulo h1{
+
+    font-size: calc(2vw + 0.7em);
+}
+
+#logo {
     display: flex;
 }
-#logo img{
-    width:100%;
+
+#logo img {
+    width: 100%;
     height: 10vh;
 }
-.botonesFo{
+
+.botonesFo {
     justify-content: center;
     display: flex;
     flex-direction: row;
-    
+
 
 }
-.botonesFo img{
+
+.botonesFo img {
     border-radius: 50%;
     width: 100%;
     height: 8vh;
     object-fit: contain;
 }
-.botonesFo button{
+
+.botonesFo button {
     cursor: pointer;
     border-color: transparent;
-    background-color:transparent;
+    background-color: transparent;
     animation: none;
 }
+
 /* ---------------------NAV---------------------- */
-nav{
+nav {
     height: fit-content;
     padding: 1em;
     align-items: flex-start;
@@ -98,84 +111,94 @@ nav{
     box-sizing: border-box;
     padding-top: 2rem;
 }
-#listaDeLinks{
+
+#listaDeLinks {
     justify-content: space-evenly;
     width: 100%;
-    font-size:clamp(.8em,2vw,5em);
+    font-size: clamp(.8em, 2vw, 5em);
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding:0.1em;
+    padding: 0.1em;
     word-wrap: break-word;
-    font-family:"Shalimar";
-    font-weight:bold;
-    
+    font-family: "Shalimar";
+    font-weight: bold;
+
 }
 
-.links{
+.links {
     text-decoration: none;
     box-sizing: border-box;
     padding: .5em;
     width: 100%;
 }
-#parrafo1{
-    
+
+#parrafo1 {
+
     width: 100%;
     word-wrap: break-word;
-    font-size:clamp(1em,2vw,5em);
-    
+    font-size: clamp(1em, 2vw, 5em);
+
 }
-section{
+
+section {
     display: flex;
     box-sizing: border-box;
     width: 80%;
     border: double orange;
 }
-section img{
+
+section img {
     width: 100%;
 }
-#principal{
+
+#principal {
     box-sizing: border-box;
     padding: 1em;
     word-wrap: break-word;
     display: flex;
     width: 75%;
     flex-direction: column;
-    font-size:clamp(1.2em,1vw,5em);
+    font-size: clamp(1.2em, 1vw, 5em);
 }
-#pasos ol li{
+
+#pasos ol li {
     padding: .5em;
 }
-aside{
+
+aside {
     height: fit-content;
     width: 25%;
     box-sizing: border-box;
-    font-size:clamp(0.7em,1.2vw,5em);
+    font-size: clamp(0.7em, 1.2vw, 5em);
     word-wrap: break-word;
     border: double blue;
     padding-top: 2rem;
 }
-aside p{
-    
+
+aside p {
+
     box-sizing: border-box;
     padding: 1em;
 }
 
-#videoPreparacion{
+#videoPreparacion {
     display: flex;
 }
-#videoPreparacion iframe{
+
+#videoPreparacion iframe {
     width: 100%;
 }
 
-#ubicacion{
+#ubicacion {
     display: flex;
 }
-#ubicacion iframe{
+
+#ubicacion iframe {
     width: 100%;
 }
 
-footer{
+footer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -185,17 +208,20 @@ footer{
     border: double salmon;
     box-sizing: border-box;
 }
-#containerIframe{
+
+#containerIframe {
     box-sizing: border-box;
     margin: 1em;
     display: flex;
-    
+
 }
-#containerIframe iframe{
+
+#containerIframe iframe {
     width: 100%;
     height: 40vh;
 }
-#datosP{
+
+#datosP {
     padding: 1em;
     box-sizing: border-box;
     margin: 1em;
@@ -204,25 +230,28 @@ footer{
     border: double grey;
 
 }
-#datosP p{
+
+#datosP p {
     height: .1em;
 }
 
-#btnWhatsapp{
+#btnWhatsapp {
     width: 20%;
     display: flex;
     box-sizing: border-box;
     text-align: center;
-    position:fixed;
+    position: fixed;
     right: 1em;
     bottom: 0;
 
 }
-#btnWhatsapp img{
+
+#btnWhatsapp img {
     width: 70%;
     border-radius: 50%;
 }
-#btnWhatsapp button{
+
+#btnWhatsapp button {
     min-width: 6em;
     width: 10em;
     height: 10em;
@@ -232,151 +261,184 @@ footer{
     background-color: transparent;
     animation: none;
 }
+
 /* CELULARES VERTICAL*/
 @media (max-width:575px) {
-    #desaparecer{
+    #desaparecer {
         display: none;
     }
+
     section {
         flex-direction: column;
         width: 100%;
     }
+
     aside {
         padding-top: 0rem;
-        font-size:clamp(1em,1.2vw,5em);
-        width: 100%; 
+        font-size: clamp(1em, 1.2vw, 5em);
+        width: 100%;
     }
-    header{
+
+    header {
         flex-direction: column;
     }
-    nav{
+
+    nav {
         padding-top: 0rem;
         width: 100%;
     }
-    #principal{
+
+    #principal {
         width: 100%;
     }
-    #listaDeLinks { 
+
+    #listaDeLinks {
         flex-direction: row;
-        font-size: clamp(1.5em,2vw,5em);
+        font-size: clamp(1.5em, 2vw, 5em);
     }
-    #listaDeLinks a{
-        width:auto
+
+    #listaDeLinks a {
+        width: auto
     }
-    #logoCelu{
-        display:block;
+
+    #logoCelu {
+        display: block;
     }
-    
+
 }
+
 /* CELULARES LANDSCAPE */
-@media (min-width: 576px) and (max-width: 767px){
-    #desaparecer{
-        padding-left: 1em;
+@media (min-width: 576px) and (max-width: 767px) {
+    #desaparecer {
         padding-right: 1em;
-        width: 10vw;
-        height: 15vh;
+        width: 25%;
+        height: 10%;
         object-fit: cover;
         display: block;
     }
 }
 
 /* TABLETAS */
-@media (min-width: 768px) and (max-width: 991px){ 
-    nav{
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
         width: 100%;
         padding-top: 0rem;
     }
-    #listaDeLinks { 
+
+    #listaDeLinks {
         flex-direction: row;
-        font-size: clamp(1.5em,2vw,5em);
+        font-size: clamp(1.5em, 2vw, 5em);
     }
-    #listaDeLinks a{
-        width:auto
+
+    #listaDeLinks a {
+        width: auto
     }
+
     section {
         width: 100%;
     }
+
     aside {
         padding-top: 0rem;
         margin-top: 6.2rem;
-        font-size:clamp(1em,1.2vw,5em);
+        font-size: clamp(1em, 1.2vw, 5em);
     }
-    #desaparecer{
-        padding-left: 1em;
+
+    #desaparecer {
         padding-right: 1em;
-        width: 10vw;
-        height: 15vh;
+        width: 25%;
+        height: 10%;
         object-fit: cover;
         display: block;
     }
 }
+
 /* PANTALLAS NORMALES */
-@media (min-width: 992px) and (max-width: 1199px){ 
-    nav{
+@media (min-width: 992px) and (max-width: 1199px) {
+    nav {
         padding-top: 0rem;
         width: 100%;
     }
-    #listaDeLinks { 
+
+    #listaDeLinks {
         flex-direction: row;
-        font-size: clamp(2em,2vw,5em);
+        font-size: clamp(2em, 2vw, 5em);
     }
-    #listaDeLinks a{
-        width:auto
+
+    #listaDeLinks a {
+        width: auto
     }
-    section{
+
+    section {
         width: 100%;
     }
-    #principal{
+
+    #principal {
         width: 100%;
     }
-    aside{
+
+    aside {
         padding-top: 0rem;
         margin-top: 6.2rem;
-        font-size:clamp(1em,1.2vw,5em);
+        font-size: clamp(1em, 1.2vw, 5em);
 
     }
+
     #logoPC {
         display: block;
-        width: 10vw;
-        height: 15vh;
+        
     }
-    #desaparecer{
+
+    #desaparecer {
         display: none;
     }
 
 }
+
 /* PANTALLAS GRANDES*/
-@media (min-width: 1200px) and (max-width: 5000px){ 
-    nav{
+@media (min-width: 1200px) and (max-width: 5000px) {
+    nav {
         padding-top: 0rem;
         width: 100%;
     }
-    #listaDeLinks { 
+
+    #listaDeLinks {
         flex-direction: row;
-        font-size: clamp(2em,2vw,5em);
+        font-size: clamp(2em, 2vw, 5em);
     }
-    #listaDeLinks a{
-        width:auto
+
+    #listaDeLinks a {
+        width: auto
     }
-    section{
+
+    section {
         width: 100%;
     }
-    #principal{
+
+    #principal {
         width: 100%;
     }
-    aside{
+
+    aside {
         padding-top: 0rem;
         margin-top: 6.2rem;
-        font-size:clamp(1em,1.2vw,5em);
+        font-size: clamp(1em, 1.2vw, 5em);
 
     }
+
     #logoPC {
         display: block;
-        width: 10vw;
-        height: 20vh;
     }
-    #desaparecer{
+
+    #desaparecer {
         display: none;
     }
 
+}
+.divP img{
+    height: 100%;
+}
+
+.card {
+    margin-bottom: 1em;
 }
