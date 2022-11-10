@@ -247,14 +247,12 @@ footer {
 }
 
 #btnWhatsapp img {
-    width: 70%;
+    width: 50%;
     border-radius: 50%;
 }
 
 #btnWhatsapp button {
-    min-width: 6em;
-    width: 10em;
-    height: 10em;
+    width: 100%;
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
@@ -441,4 +439,15 @@ footer {
 
 .card {
     margin-bottom: 1em;
+}
+#copyR{
+    background-color: white;
+}
+#modoOscuro{
+    background-color: black;
+    color: white;
+}
+#butonCambiar{
+    display: flex;
+    width: 100vw;
 }
